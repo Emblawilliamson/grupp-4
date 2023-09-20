@@ -30,3 +30,9 @@ header {
 #sidebar {
   grid-area: sidebar-right;
 }
+
+.w3s_logo {
+  height: 38px;
+  width: 36px;
+}
+
