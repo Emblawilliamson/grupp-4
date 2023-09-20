@@ -12,3 +12,6 @@ body {
   "sidebar-left main sidebar-right"
   "footer footer footer";
 }
+aside {
+  grid-area: sidebar-left;
+}
