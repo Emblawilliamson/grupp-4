@@ -6,7 +6,7 @@
 body {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
-  grid-template-rows: 3em 2em 600px 3em;
+  grid-template-rows: 3em 2em auto 3em;
   grid-template-areas:
     "header header header"
     "nav nav nav"
@@ -15,4 +15,19 @@ body {
 }
 aside {
   grid-area: sidebar-left;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+nav {
+  grid-area: nav;
+}
+header {
+  grid-area: header;
+}
+#sidebar {
+  grid-area: sidebar-right;
 }
