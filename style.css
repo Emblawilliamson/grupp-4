@@ -5,12 +5,13 @@
 
 body {
   display: grid;
-  grid-template-columns:.5fr 1fr .5fr;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 3em 2em auto 3em;
-  grid-template-areas: "header header header"
-  "nav nav nav"
-  "sidebar-left main sidebar-right"
-  "footer footer footer";
+  grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "sidebar-left main sidebar-right"
+    "footer footer footer";
 }
 aside {
   grid-area: sidebar-left;
@@ -18,6 +19,7 @@ aside {
 main {
   grid-area: main;
 }
+
 footer {
   grid-area: footer;
 }
@@ -30,6 +32,16 @@ header {
 #sidebar {
   grid-area: sidebar-right;
 }
+
+#navbar {
+  display: grid;
+  justify-content: center;
+  font-size: 20px;
+  background: #333;
+  color: #fff;
+}
+
+/*--Style för Footer--*/
 
 .w3s_logo {
   height: 38px;
